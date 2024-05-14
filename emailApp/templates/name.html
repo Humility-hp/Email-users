@@ -1,0 +1,16 @@
+<form action="/form" method="POST">
+{% csrf_token %}
+<input type="submit" value="submit">
+<div class="first-two">
+ {{form}}
+</div>
+</form>
+<style>
+ .first-two{
+  background-color:aqua;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content:center
+ }
+</style>
